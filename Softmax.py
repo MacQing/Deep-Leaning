@@ -5,6 +5,7 @@
 
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
+from sklearn.model_selection import train_test_split
 from sklearn.model_selection import KFold
 
 
