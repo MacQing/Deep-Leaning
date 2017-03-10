@@ -56,7 +56,7 @@ for epoch in range(num_epoch):
     num_batch = int(train_data_size / batch_size)
     for i in range(num_batch):
         # 每个batch在训练集中的索引
-        batch_index = [j + (i - 1)* batch_size for j in range(batch_size)]
+        batch_index = [j + (i)* batch_size for j in range(batch_size)]
         sess.run(train_step, feed_dict = {x: train_data[batch_index], y_: train_lables[batch_index]})
         
     # 计算训练误差和验证误差
